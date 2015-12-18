@@ -59,4 +59,16 @@ public class MusicOrganizer
             files.remove(index);
         }
     }
+    
+    /**
+     * Método que toma un parámetro entero y comprueba que sea un índice válido para el atributo files
+     */
+    public void checkIndex (int index)
+    {
+        
+        if (index <0 || index >= files.size())
+        {
+         System.out.println("El rango no es válido, el rango válido es de 0 a " + (files.size()-1));   
+        }
+    }
 }
